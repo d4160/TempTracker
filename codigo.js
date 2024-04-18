@@ -26,4 +26,6 @@ function mostrarClima(data) {
     document.querySelector('.ciudad').innerHTML = data.location.name;
     document.querySelector('.humedad').innerHTML = data.current.humidity + '%';
     document.querySelector('.viento').innerHTML = data.current.wind_kph + ' km/h';
+
+    document.getElementById('clima-contenedor').style.display = 'block';
 }
